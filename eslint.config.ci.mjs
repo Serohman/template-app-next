@@ -1,5 +1,13 @@
 // @ts-check
-import eslint from "@eslint/js";
-import tseslint from "typescript-eslint";
+import baseConfig from "./eslint.config.mjs";
 
-export default tseslint.config(eslint.configs.recommended, tseslint.configs.strict);
+const ciConfig = [
+  ...baseConfig,
+  {
+    rules: {
+      "@typescript-eslint/no-explicit-any": "error", // Upgrade from warn to error
+    },
+  },
+];
+
+export default ciConfig;

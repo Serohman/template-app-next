@@ -1,25 +1,29 @@
 {
-  "include": ["src/index.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules", "src/**/*.test.ts"],
   "compilerOptions": {
     // Basic Options
     "target": "ESNext", // The version of JavaScript you're targeting.
     "module": "ESNext",
-    "lib": ["esnext"],
+    "lib": ["esnext", "dom", "dom.iterable"],
     "allowJs": true,
     "checkJs": true,
-    "outDir": "dist",
-    "rootDir": "src",
+
+    // Output settings
+    "noEmit": true, // Next.js handles the build process
+    "rootDir": ".",
     "baseUrl": "src",
     "paths": {
       "@/*": ["./*"]
     },
 
     // Module Resolution Options
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "esModuleInterop": true, // Normalize CommonJS and ES modules behaviour
     "resolveJsonModule": true, // Allows importing JSON files as modules
     "moduleDetection": "force", // Forces module detection to avoid ambiguity
+    "isolatedModules": true,
+    "jsx": "preserve", // Added for Next.js JSX handling
 
     // Type Checking Options
     "strict": true,
@@ -34,13 +38,14 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
 
-    // Source Map Options
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true, // Generates source maps for declaration files
-
     // Incremental Compilation
     "incremental": true,
-    "tsBuildInfoFile": "./.temp/tsconfig.tsbuildinfo" // Path to save incremental compilation info
+    "tsBuildInfoFile": "./.temp/tsconfig.tsbuildinfo", // Path to save incremental compilation info
+
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   }
 }
