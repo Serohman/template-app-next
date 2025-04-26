@@ -19,7 +19,12 @@ const eslintConfig = [
   {
     rules: {
       "@typescript-eslint/no-explicit-any": "warn",
-      // Add any other rule customizations here
+    },
+  },
+  {
+    files: ["jest.config.js"],
+    rules: {
+      "@typescript-eslint/no-var-requires": "off",
     },
   },
 ];

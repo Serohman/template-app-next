@@ -1,6 +1,6 @@
 # Template: NPM Package
 
-This is a [template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) which you can use to quickly bootstrap your own NPM package.
+This is a [template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) which you can use to quickly bootstrap your own Next app.
 
 ## Features
 
@@ -21,6 +21,9 @@ This is a [template repository](https://docs.github.com/en/repositories/creating
   - [Set package metadata](#4-set-package-metadata)
   - [Publish your package](#5-publish-your-package)
 - [Available NPM Scripts](#available-npm-scripts)
+- [Testing](#testing)
+  - [Run tests](#run-tests)
+  - [Example test](#example-test)
 
 ## Quick Start
 
@@ -30,54 +33,17 @@ The fastest way is to use GitHub CLI:
 
 ```bash
 # Create a new repository using a template and clone it
-gh repo create new-repo-name --template serohman/npm-typescript-module
+gh repo create new-repo-name --template serohman/template-app-next
 gh repo clone new-repo-name
 ```
 
 Or refer to the [official guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) for creating repositories from a template.
 
-#### 2. Set up NPM authentication
-
-You need to generate an [NPM access token](https://docs.npmjs.com/about-access-tokens) and save it as a [GitHub Action Secret](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions), under the key name `NPM_TOKEN`
-
-Use GitHub CLI
-
-```bash
-# A prompt for entering the npm token will appear
-gh secret set NPM_TOKEN
-```
-
-Or set the secret via the web UI by navigating to your repository's GitHub page, and then: `Settings > Secrets and variables > Actions > New repository secret`.
-
-#### 3. Install dependencies
+#### 2. Install dependencies
 
 ```bash
 npm install
 ```
-
-#### 4. Set package metadata
-
-Open `package.json` and fill out all the relevant fields:
-
-- `name`
-- `author`
-- `description`
-- `tags`
-- `license`
-- `publishConfig.access` (Set to `private` to make your package private)
-
-#### 5. Publish your package
-
-To publish your package, switch to the `release` branch, then create and push a [semantic commit](https://github.com/semantic-release/semantic-release?tab=readme-ov-file#commit-message-format) with the changes you've made to `package.json`. Once the changes are pushed, GitHub Actions will automatically publish your package.
-
-```bash
-git checkout -b "release"
-git stage .
-git commit -m "feat: Setup package"
-git push --set-upstream origin release
-```
-
-And voilà!🎉 The moment new changes hit the release branch, GitHub Actions will pick them up and publish a new release on NPM.
 
 ## Available NPM Scripts
 
@@ -85,8 +51,8 @@ And voilà!🎉 The moment new changes hit the release branch, GitHub Actions wi
 
 These commands are used during the development process to build, test, lint, and format the code.
 
-- `start`: Runs the `build` script.
-- `build`: Compiles the TypeScript code and watches for changes.
+- `dev`: Start the development environment script.
+- `start`: An alias for `dev`
 - `test`: Runs Jest in watch mode.
 - `lint`: Runs ESLint on the `./src` directory.
 - `format`: Formats the code in the `./src` directory using Prettier.
@@ -97,9 +63,7 @@ These commands are executed before a commit is made to ensure code quality and c
 
 - `precommit`: Runs lint-staged to check staged files.
 - `precommit:format`: Formats staged files using Prettier.
-- `precommit:lint`: Fixes linting issues in staged files using ESLint.
-- `precommit:test`: Runs Jest on related tests for staged files.
-- `precommit:typecheck`: Type checks the code without emitting output.
+- `precommit:check`: Type checks the code without emitting output.
 
 #### Continuous Integration
 
@@ -109,5 +73,32 @@ These commands are executed by GitHub Actions on the `release` branch. Each time
 - `ci:test`: Runs Jest with a CI-specific configuration.
 - `ci:build`: Builds the TypeScript project.
 - `ci:format`: Checks code formatting using Prettier.
+
+## Testing
+
+This project uses [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for unit testing.
+
+### Run tests
+
+```bash
+npm test
+```
+
+### Example test
+
+```tsx
+// src/app/Greeting.test.tsx
+import "@testing-library/jest-dom";
+import {render, screen} from "@testing-library/react";
+import React from "react";
+import Greeting from "./Greeting";
+
+describe("Greeting", () => {
+  it("renders the correct greeting", () => {
+    render(<Greeting name="World" />);
+    expect(screen.getByText("Hello, World!")).toBeInTheDocument();
+  });
+});
+```
 
 ---
