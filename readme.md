@@ -24,6 +24,7 @@ This is a [template repository](https://docs.github.com/en/repositories/creating
 - [Testing](#testing)
   - [Run tests](#run-tests)
   - [Example test](#example-test)
+- [Vercel Deployment](#vercel-deployment)
 
 ## Quick Start
 
@@ -100,5 +101,17 @@ describe("Greeting", () => {
   });
 });
 ```
+
+## Vercel Deployment
+
+This template is optimized for instant deployment on [Vercel](https://vercel.com/):
+
+1. **Create your repo from this template** (see Quick Start above).
+2. **Push your code to GitHub.**
+3. **Go to [Vercel](https://vercel.com/import/git)** and import your new repository.
+4. Vercel will detect the Next.js app and deploy automatically.
+5. All future pushes to your repo will auto-deploy.
+
+No extra configuration is needed. For custom domains, environment variables, or advanced settings, use the Vercel dashboard.
 
 ---
