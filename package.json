@@ -18,6 +18,7 @@
     "start": "npm run dev",
     "dev": "next dev --turbopack",
     "lint": "next lint",
+    "test": "jest",
     "format": "npx prettier --write ./src",
     "precommit": "lint-staged",
     "precommit:check": "tsc --noEmit --skipLibCheck --pretty false --incremental false",
@@ -30,8 +31,7 @@
     "ci:typecheck": "tsc --noEmit -p tsconfig.ci.json",
     "ci:coverage": "jest --coverage --ci",
     "prod:build": "next build",
-    "prod:start": "next start",
-    "test": "jest"
+    "prod:start": "next start"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -42,6 +42,7 @@
     "@eslint/js": "^9.15.0",
     "@jest/globals": "^29.7.0",
     "@tailwindcss/postcss": "^4",
+    "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
