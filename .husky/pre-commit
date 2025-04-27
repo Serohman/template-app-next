@@ -1,5 +1,5 @@
 npm run precommit
-npm run precommit:check # Ensure linting and correct types
+npm run precommit:check # Ensure type correctness
 
 # Check if package.json or package-lock.json is staged
 if git diff --cached --name-only | grep -E 'package\.json|package-lock\.json' > /dev/null; then
