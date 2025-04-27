@@ -31,8 +31,7 @@
     "ci:coverage": "jest --coverage --ci",
     "prod:build": "next build",
     "prod:start": "next start",
-    "test": "jest",
-    "release": "semantic-release"
+    "test": "jest"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -60,11 +59,6 @@
     "lint-staged": "^15.2.10",
     "next": "^15.3.1",
     "prettier": "^3.3.3",
-    "semantic-release": "^24.2.3",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^9.2.4",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/npm": "^11.0.2",
     "tailwindcss": "^4",
     "ts-jest": "^29.3.2",
     "typescript": "^5.6.3",

@@ -10,7 +10,6 @@ This is a [template repository](https://docs.github.com/en/repositories/creating
 - **Auto-Formatting**: Ensures consistent code style with automated formatting using [Prettier](https://prettier.io/)
 - **Continuous Integration (CI)**: Pre-configured [GitHub Actions](https://docs.github.com/en/actions) for linting, testing, building, and formatting in CI environments
 - **Git Hooks**: [Husky](https://typicode.github.io/husky/)-managed Git hooks to run scripts before commits, pushes, and other Git actions, ensuring code quality
-- **Automated Publishing**: Uses [Semantic Release](https://semantic-release.gitbook.io/semantic-release) to automate package versioning and publishing.
 
 ## Table of Contents
 
