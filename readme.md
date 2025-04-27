@@ -1,7 +1,4 @@
-# Template: NPM Package
-
-[![CI](https://github.com/<USERNAME>/<REPO>/actions/workflows/release.yml/badge.svg)](https://github.com/<USERNAME>/<REPO>/actions/workflows/release.yml)
-[![Coverage Status](https://img.shields.io/badge/coverage--report-Check%20Artifacts%20Tab-brightgreen)](../../actions?query=workflow%3ACI)
+# Template: Next Application
 
 This is a [template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) which you can use to quickly bootstrap your own Next app.
 
