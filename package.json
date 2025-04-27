@@ -20,18 +20,9 @@
     "lint": "next lint",
     "test": "jest",
     "format": "npx prettier --write ./src",
-    "precommit": "lint-staged",
-    "precommit:check": "tsc --noEmit --skipLibCheck --pretty false --incremental false",
     "precommit:format": "prettier --ignore-unknown --write",
-    "precommit:lint": "eslint --fix",
-    "ci:lint": "npx eslint ./src --config eslint.config.ci.mjs",
-    "ci:build": "next build",
-    "ci:format": "npx prettier --check ./src",
-    "ci:test": "npm run test -- --ci",
-    "ci:typecheck": "tsc --noEmit -p tsconfig.ci.json",
-    "ci:coverage": "jest --coverage --ci",
-    "prod:build": "next build",
-    "prod:start": "next start"
+    "precommit:lint": "next lint --fix --config eslint.config.ci.mjs",
+    "precommit:typecheck": "tsc --noEmit --skipLibCheck --pretty false --incremental false"
   },
   "dependencies": {
     "react": "^19.0.0",
