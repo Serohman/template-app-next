@@ -27,7 +27,7 @@
     "ci:build": "next build",
     "ci:format": "npx prettier --check ./src",
     "ci:test": "npm run test -- --ci",
-    "ci:typecheck": "tsc --noEmit",
+    "ci:typecheck": "tsc --noEmit -p tsconfig.ci.json",
     "ci:coverage": "jest --coverage --ci",
     "prod:build": "next build",
     "prod:start": "next start",
