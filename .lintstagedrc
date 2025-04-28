@@ -1,4 +1,0 @@
-{
-  "src/**/*.{js,jsx,ts,tsx}": ["npm run precommit:lint --"],
-  "*": ["npm run precommit:format --"]
-}
