@@ -1,3 +1,12 @@
+# To-do
+
+- Rename "eslint.config.ci.mjs" to "eslint.config.prod.mjs"
+- Add cursor rule for writing style
+- Add cursor rule for coding workflow (TDD)
+- Add cursor rule for document adherence
+- Add cursor rule for best TS practices (include examples)
+- Add cursor rule for best Jest practices (include examples)
+
 # Template: Next Application
 
 **_A hand-picked front-end stack to quickly kickstart and ship serverless apps—with best practices baked in._**
