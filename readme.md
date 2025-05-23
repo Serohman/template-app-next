@@ -17,7 +17,7 @@
 
 1. **Clone the template**
    ```bash
-   gh repo create new-repo-name --template serohman/template-app-next
+   gh repo create new-repo-name --template serohman/template-app-next --private
    gh repo clone new-repo-name
    ```
 2. **Install dependencies**
