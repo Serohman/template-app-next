@@ -11,7 +11,7 @@
 
 ## Features
 
-- **No bad code:** Catch compilation, linting, formatting errors and other poor practices before they're committed.
+- **Catch bad code:** Catch compilation, linting, formatting errors and other poor practices before they're committed.
 
 ## Quick Start
 
