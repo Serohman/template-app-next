@@ -6,7 +6,8 @@
 - Add cursor rule for document adherence
 - Add cursor rule for best TS practices (include examples)
 - Add cursor rule for best Jest practices (include examples)
-- Update ESLint "no-unused-vars" to "warn" in dev environment
+- Update ESLint "no-unused-vars" to "warn" in dev environment, and error in prod.
+- Consider adding a TS setup for Node.js (in case need to write node scripts)
 
 # Template: Next Application
 
