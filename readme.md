@@ -8,6 +8,7 @@
 - Add cursor rule for best Jest practices (include examples)
 - Update ESLint "no-unused-vars" to "warn" in dev environment, and error in prod.
 - Consider adding a TS setup for Node.js (in case need to write node scripts)
+- Add ".vscode" to .gitignore
 
 # Template: Next Application
 
