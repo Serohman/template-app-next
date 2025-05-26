@@ -1,6 +1,7 @@
 # To-do
 
 - Delete component and test examples, and replace them with .gitkeep to preserve folders
+- Fix triple a triple warning about unused vars
 
 # Template: Next Application
 
