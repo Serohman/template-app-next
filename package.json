@@ -21,7 +21,7 @@
     "test": "jest",
     "format": "npx prettier --write ./src",
     "precommit:format": "prettier --ignore-unknown --write",
-    "precommit:lint": "next lint --fix --config eslint.config.ci.mjs",
+    "precommit:lint": "next lint --fix --config eslint.config.prod.mjs",
     "precommit:typecheck": "tsc --noEmit --skipLibCheck --pretty false --incremental false"
   },
   "dependencies": {

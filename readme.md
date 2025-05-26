@@ -1,6 +1,5 @@
 # To-do
 
-- Rename "eslint.config.ci.mjs" to "eslint.config.prod.mjs"
 - Add cursor rule for writing style
 - Add cursor rule for coding workflow (TDD)
 - Add cursor rule for document adherence
