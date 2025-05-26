@@ -1,3 +1,7 @@
+# To-do
+
+- Delete component and test examples, and replace them with .gitkeep to preserve folders
+
 # Template: Next Application
 
 **_A hand-picked front-end stack to quickly kickstart and ship serverless apps—with best practices baked in._**
