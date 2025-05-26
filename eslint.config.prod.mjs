@@ -5,7 +5,9 @@ const ciConfig = [
   ...baseConfig,
   {
     rules: {
-      "@typescript-eslint/no-explicit-any": "error", // Upgrade from warn to error
+      "@typescript-eslint/no-explicit-any": "error",
+      "@typescript-eslint/no-unused-vars": "error",
+      "no-unused-vars": "error",
     },
   },
 ];

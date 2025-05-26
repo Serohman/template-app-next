@@ -1,9 +1,3 @@
-# To-do
-
-- Update ESLint "no-unused-vars" to "warn" in dev environment, and error in prod.
-- Consider adding a TS setup for Node.js (in case need to write node scripts)
-- Add ".vscode" to .gitignore
-
 # Template: Next Application
 
 **_A hand-picked front-end stack to quickly kickstart and ship serverless apps—with best practices baked in._**
