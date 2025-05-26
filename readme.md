@@ -1,6 +1,5 @@
 # To-do
 
-- Add cursor rule for coding workflow (TDD)
 - Add cursor rule for document adherence
 - Add cursor rule for best TS practices (include examples)
 - Add cursor rule for best Jest practices (include examples)
