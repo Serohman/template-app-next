@@ -2,6 +2,7 @@
 
 - Delete component and test examples, and replace them with .gitkeep to preserve folders
 - Fix triple a triple warning about unused vars
+- Fix up the default layout to stretch to 100% height of the screen
 
 # Template: Next Application
 
