@@ -1,7 +1,3 @@
-# To-do
-
-- Better Tailwind config (Fix typography, add some common animations)
-
 # Template: Next Application
 
 **_A hand-picked front-end stack to quickly kickstart and ship serverless apps—with best practices baked in._**
@@ -53,3 +49,7 @@
 3. Vercel auto-detects Next.js and deploys instantly.
 
 ---
+
+# To-do
+
+- Better Tailwind config (Fix typography, add some common styles, animations)
