@@ -1,7 +1,6 @@
 # To-do
 
 - Fix up the default layout to stretch to 100% height of the screen
-- Fix this issue https://stackoverflow.com/questions/57802057/eslint-configuring-no-unused-vars-for-typescript
 - Better Tailwind config (Fix typography, add some common animations)
 
 # Template: Next Application
