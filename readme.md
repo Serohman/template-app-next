@@ -1,6 +1,5 @@
 # To-do
 
-- Fix up the default layout to stretch to 100% height of the screen
 - Better Tailwind config (Fix typography, add some common animations)
 
 # Template: Next Application
