@@ -17,6 +17,10 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   ...tseslint.config(tseslint.configs.strict),
   {
+    files: ["**/*.test.js", "**/*.test.ts"],
+    env: {jest: true},
+  },
+  {
     files: ["**/*.js", "**/*.jsx"],
     rules: {
       "no-unused-vars": "warn",
