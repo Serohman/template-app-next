@@ -55,3 +55,4 @@
 - Better Tailwind config (Fix typography, add some common styles, animations)
 - Fix auto-sorting for tailwind classes
 - Add this https://stackoverflow.com/questions/57528740/how-to-make-some-fields-in-object-required
+- Only run precommit scripts on staged files
