@@ -53,3 +53,4 @@
 # To-do
 
 - Better Tailwind config (Fix typography, add some common styles, animations)
+- Fix auto-sorting for tailwind classes
