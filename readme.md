@@ -47,6 +47,7 @@
 1. Push your code to GitHub.
 2. Import your repo at [Vercel](https://vercel.com/import/git).
 3. Vercel auto-detects Next.js and deploys instantly.
+4. Document AI component
 
 ---
 
