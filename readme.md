@@ -58,3 +58,4 @@
 - Only run precommit scripts on staged files
 - Add [Context7](https://github.com/upstash/context7) MCP for up-to-date documentations
 - Add documentation for AI component
+- Add the new rules structure (from hookformers)
